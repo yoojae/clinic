@@ -93,7 +93,103 @@ class HomePage extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: GlobalStyle.white,
                         borderRadius: BorderRadius.circular(25),
-                      ),                    ),
+                      ),
+                      child: Row(
+                        children: [
+                          Flexible(
+                            flex: 1,
+                            child: Container(
+                              height: 35,
+                              margin: EdgeInsets.only(left: 15),
+                              decoration: BoxDecoration(
+                                color: GlobalStyle.light_green,
+                                borderRadius: BorderRadius.circular(7),
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 10),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text('Type here to search...',
+                                      style: TextStyle(
+                                        color: GlobalStyle.gray,
+                                      ),
+                                    ),
+                                    Icon(Icons.search_rounded, color: GlobalStyle.green,),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                          Flexible(
+                            flex: 1,
+                            child: Container(),
+                          ),
+                          Flexible(
+                            flex: 1,
+                            child: Row(
+                              children: [
+                                Text('English',
+                                  style: TextStyle(
+                                    color: GlobalStyle.green,
+                                    fontSize: 18,
+                                  ),
+                                ),
+                                Icon(Icons.arrow_drop_down_outlined, color: GlobalStyle.green,),
+                                Container(
+                                  width: 20,
+                                ),
+                                Icon(Icons.crop_free_rounded, color: GlobalStyle.green,),
+                                Container(
+                                  width: 20,
+                                ),
+                                Icon(Icons.notifications, color: GlobalStyle.green,),
+                                Container(
+                                  width: 20,
+                                ),
+                                Icon(Icons.mail_rounded, color: GlobalStyle.green,),
+                                Container(
+                                  width: 20,
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      clipBehavior: Clip.hardEdge,
+                                      width: 50,
+                                      height: 50,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                      ),
+                                      child: Image.asset('images/png/1.png'),
+                                    ),
+                                    Container(
+                                      width: 20,
+                                    ),
+                                    Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text('Bini Jets',
+                                          style: TextStyle(
+                                            fontSize: 17,
+                                          ),
+                                        ),
+                                        Text('available',
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            color: GlobalStyle.green,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -268,10 +364,380 @@ class HomePage extends StatelessWidget {
                         Flexible(
                           flex: 2,
                           child: Container(
-                            height: 500,
+                            margin: EdgeInsets.only(left: 20, top: 20, bottom: 20),
+                            padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
                             decoration: BoxDecoration(
-                              color: GlobalStyle.white,
+                              color: Colors.white,
                               borderRadius: BorderRadius.circular(25),
+                            ),
+                            child: Column(
+                              children: [
+                                Container(
+                                  height: 70,
+                                  decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                        colors: [GlobalStyle.green, GlobalStyle.light_green],
+                                        begin: Alignment.centerLeft,
+                                        end: Alignment.bottomRight
+                                    ),
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text('Advice! Connect your Apple Watch for better results.',
+                                          style: TextStyle(
+                                            color: GlobalStyle.white,
+                                          ),
+                                        ),
+                                        Container(
+                                          width: 50,
+                                          height: 50,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.circular(20),
+                                          ),
+                                          child: Center(
+                                            child: Icon(Icons.wifi_outlined, color: GlobalStyle.green,),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  height: 20,
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      child: Text('Popular Training',
+                                        style: TextStyle(
+                                          color: GlobalStyle.green,
+                                          fontSize: 18,
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      height: 15,
+                                    ),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                      children: [
+                                        Training(title: 'Power Training', subtitle: '395 kcal / h', image: Image.asset('images/png/34.png'),),
+                                        Training(title: 'Yoga Training', subtitle: '395 kcal / h', image: Image.asset('images/png/35.png'),),
+                                        Training(title: 'Stretching', subtitle: '395 kcal / h', image: Image.asset('images/png/36.png'),),
+                                      ],
+                                    ),
+                                    Container(
+                                      height: 20,
+                                    ),
+                                    Row(
+                                      children: [
+                                        Flexible(
+                                          flex: 2,
+                                          fit: FlexFit.tight,
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text('Activity Statistic',
+                                                style: TextStyle(
+                                                  color: GlobalStyle.green,
+                                                  fontSize: 18,
+                                                ),
+                                              ),
+                                              Container(
+                                                height: 10,
+                                              ),
+                                              Container(
+                                                width: 200,
+                                                height: 250,
+                                                color: Colors.grey.shade100,
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Flexible(
+                                          flex: 1,
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            children: [
+                                              Row(
+                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                children: [
+                                                  Text('My Training',
+                                                    style: TextStyle(
+                                                      color: GlobalStyle.green,
+                                                      fontSize: 18,
+                                                    ),
+                                                  ),
+                                                  Container(
+                                                    width: 30,
+                                                    height: 25,
+                                                    decoration: BoxDecoration(
+                                                      color: GlobalStyle.light_green,
+                                                      borderRadius: BorderRadius.circular(10),
+                                                    ),
+                                                    child: Center(
+                                                      child: Icon(Icons.add, color: GlobalStyle.green,),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius: BorderRadius.circular(15),
+                                                  boxShadow: [BoxShadow(
+                                                    blurRadius: 5.0,
+                                                    color: Colors.grey.shade100,
+                                                    offset: Offset(2, 5),
+                                                  )],
+                                                ),
+                                                child: Column(
+                                                  children: [
+                                                    Padding(
+                                                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 5,),
+                                                      child: Row(
+                                                        children: [
+                                                          Flexible(
+                                                            flex: 1,
+                                                            fit: FlexFit.tight,
+                                                            child: Text('Training'),
+                                                          ),
+                                                          Flexible(
+                                                            flex: 1,
+                                                            child: Text('TRX Cardio'),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                    Container(
+                                                      height: 2,
+                                                      color: Colors.grey.shade200,
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 5,),
+                                                      child: Row(
+                                                        children: [
+                                                          Flexible(
+                                                            flex: 1,
+                                                            fit: FlexFit.tight,
+                                                            child: Text('Burend'),
+                                                          ),
+                                                          Flexible(
+                                                            flex: 1,
+                                                            child: Text('350 Kcal'),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 5,),
+                                                      child: Row(
+                                                        children: [
+                                                          Flexible(
+                                                            flex: 1,
+                                                            fit: FlexFit.tight,
+                                                            child: Text('Spend'),
+                                                          ),
+                                                          Flexible(
+                                                            flex: 1,
+                                                            child: Text('1hr 45m'),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                              Container(
+                                                height: 20,
+                                              ),
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius: BorderRadius.circular(15),
+                                                  boxShadow: [BoxShadow(
+                                                    blurRadius: 5.0,
+                                                    color: Colors.grey.shade100,
+                                                    offset: Offset(2, 5),
+                                                  )],
+                                                ),
+                                                child: Column(
+                                                  children: [
+                                                    Padding(
+                                                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 5,),
+                                                      child: Row(
+                                                        children: [
+                                                          Flexible(
+                                                            flex: 1,
+                                                            fit: FlexFit.tight,
+                                                            child: Text('Training'),
+                                                          ),
+                                                          Flexible(
+                                                            flex: 1,
+                                                            child: Text('Stretching'),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                    Container(
+                                                      height: 2,
+                                                      color: Colors.grey.shade200,
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 5,),
+                                                      child: Row(
+                                                        children: [
+                                                          Flexible(
+                                                            flex: 1,
+                                                            fit: FlexFit.tight,
+                                                            child: Text('Burend'),
+                                                          ),
+                                                          Flexible(
+                                                            flex: 1,
+                                                            child: Text('180 Kcal'),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 5,),
+                                                      child: Row(
+                                                        children: [
+                                                          Flexible(
+                                                            flex: 1,
+                                                            fit: FlexFit.tight,
+                                                            child: Text('Spend'),
+                                                          ),
+                                                          Flexible(
+                                                            flex: 1,
+                                                            child: Text('30m'),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Container(
+                                      height: 20,
+                                    ),
+                                    Row(
+                                      children: [
+                                        Container(
+                                          margin: EdgeInsets.only(right: 100),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text('Heart Rate',
+                                                style: TextStyle(
+                                                  color: GlobalStyle.green,
+                                                  fontSize: 18,
+                                                ),
+                                              ),
+                                              Container(
+                                                height: 10,
+                                              ),
+                                              Row(
+                                                mainAxisAlignment: MainAxisAlignment.start,
+                                                children: [
+                                                  Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Text('75 bpm',
+                                                        style: TextStyle(
+                                                          fontSize: 18,
+                                                        ),
+                                                      ),
+                                                      Text('Health Zone',
+                                                        style: TextStyle(
+                                                          color: GlobalStyle.green,
+                                                          fontSize: 14,
+                                                        ),),
+                                                    ],
+                                                  ),
+                                                  Container(
+                                                    width: 40,
+                                                    height: 40,
+                                                    margin: EdgeInsets.only(left: 10),
+                                                    decoration: BoxDecoration(
+                                                      shape: BoxShape.circle,
+                                                      color: GlobalStyle.light_green,
+                                                    ),
+                                                    child: Center(
+                                                      child: Icon(Icons.ac_unit),
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Container(
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text('Water Balance',
+                                                style: TextStyle(
+                                                  color: GlobalStyle.green,
+                                                  fontSize: 18,
+                                                ),
+                                              ),
+                                              Container(
+                                                height: 10,
+                                              ),
+                                              Row(
+                                                mainAxisAlignment: MainAxisAlignment.start,
+                                                children: [
+                                                  Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Text('Drunk',
+                                                        style: TextStyle(
+                                                          color: GlobalStyle.gray,
+                                                          fontSize: 14,
+                                                        ),
+                                                      ),
+                                                      Text('1250ml / 2000ml',
+                                                        style: TextStyle(
+                                                          fontSize: 18,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  Container(
+                                                    width: 30,
+                                                    height: 30,
+                                                    margin: EdgeInsets.only(left: 10),
+                                                    decoration: BoxDecoration(
+                                                      shape: BoxShape.circle,
+                                                      color: GlobalStyle.light_green,
+                                                    ),
+                                                    child: Center(
+                                                      child: Icon(Icons.ac_unit),
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ],
                             ),
                           ),
                         ),
@@ -614,3 +1080,56 @@ var TextButtonStyle = ButtonStyle(
     padding: MaterialStatePropertyAll(EdgeInsets.zero),
     overlayColor: MaterialStatePropertyAll(Colors.transparent)
 );
+
+class Training extends StatelessWidget {
+  const Training({
+    super.key,
+    required this.title,
+    required this.subtitle,
+    required this.image,
+  });
+
+  final String title, subtitle;
+  final image;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Row(
+          children: [
+            Container(
+              width: 40,
+              height: 40,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: GlobalStyle.light_green,
+              ),
+              child: Center(
+                child: image,
+              ),
+            ),
+            Container(
+              width: 10,
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(title,
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
+                ),
+                Text(subtitle,
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: GlobalStyle.gray,
+                  ),),
+              ],
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
