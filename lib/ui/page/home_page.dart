@@ -90,6 +90,7 @@ class HomePage extends StatelessWidget {
                   children: [
                     Container(
                       height: 70,
+                      margin: EdgeInsets.fromLTRB(20, 20, 0, 20, ),
                       decoration: BoxDecoration(
                         color: GlobalStyle.white,
                         borderRadius: BorderRadius.circular(25),
@@ -408,7 +409,7 @@ class HomePage extends StatelessWidget {
                                   ),
                                 ),
                                 Container(
-                                  height: 20,
+                                  height: 30,
                                 ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -422,7 +423,7 @@ class HomePage extends StatelessWidget {
                                       ),
                                     ),
                                     Container(
-                                      height: 15,
+                                      height: 25,
                                     ),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -433,9 +434,10 @@ class HomePage extends StatelessWidget {
                                       ],
                                     ),
                                     Container(
-                                      height: 20,
+                                      height: 50,
                                     ),
                                     Row(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Flexible(
                                           flex: 2,
@@ -453,8 +455,8 @@ class HomePage extends StatelessWidget {
                                                 height: 10,
                                               ),
                                               Container(
-                                                width: 200,
-                                                height: 250,
+                                                width: 400,
+                                                height: 330,
                                                 color: Colors.grey.shade100,
                                               ),
                                             ],
@@ -489,6 +491,9 @@ class HomePage extends StatelessWidget {
                                                 ],
                                               ),
                                               Container(
+                                                height: 30,
+                                              ),
+                                              Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.white,
                                                   borderRadius: BorderRadius.circular(15),
@@ -501,7 +506,7 @@ class HomePage extends StatelessWidget {
                                                 child: Column(
                                                   children: [
                                                     Padding(
-                                                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 5,),
+                                                      padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15,),
                                                       child: Row(
                                                         children: [
                                                           Flexible(
@@ -521,7 +526,7 @@ class HomePage extends StatelessWidget {
                                                       color: Colors.grey.shade200,
                                                     ),
                                                     Padding(
-                                                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 5,),
+                                                      padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15,),
                                                       child: Row(
                                                         children: [
                                                           Flexible(
@@ -537,7 +542,7 @@ class HomePage extends StatelessWidget {
                                                       ),
                                                     ),
                                                     Padding(
-                                                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 5,),
+                                                      padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15,),
                                                       child: Row(
                                                         children: [
                                                           Flexible(
@@ -571,7 +576,7 @@ class HomePage extends StatelessWidget {
                                                 child: Column(
                                                   children: [
                                                     Padding(
-                                                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 5,),
+                                                      padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15,),
                                                       child: Row(
                                                         children: [
                                                           Flexible(
@@ -591,7 +596,7 @@ class HomePage extends StatelessWidget {
                                                       color: Colors.grey.shade200,
                                                     ),
                                                     Padding(
-                                                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 5,),
+                                                      padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15,),
                                                       child: Row(
                                                         children: [
                                                           Flexible(
@@ -607,7 +612,7 @@ class HomePage extends StatelessWidget {
                                                       ),
                                                     ),
                                                     Padding(
-                                                      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 5,),
+                                                      padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15,),
                                                       child: Row(
                                                         children: [
                                                           Flexible(
@@ -631,7 +636,7 @@ class HomePage extends StatelessWidget {
                                       ],
                                     ),
                                     Container(
-                                      height: 20,
+                                      height: 70,
                                     ),
                                     Row(
                                       children: [
@@ -643,11 +648,11 @@ class HomePage extends StatelessWidget {
                                               Text('Heart Rate',
                                                 style: TextStyle(
                                                   color: GlobalStyle.green,
-                                                  fontSize: 18,
+                                                  fontSize: 20,
                                                 ),
                                               ),
                                               Container(
-                                                height: 10,
+                                                height: 20,
                                               ),
                                               Row(
                                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -657,8 +662,11 @@ class HomePage extends StatelessWidget {
                                                     children: [
                                                       Text('75 bpm',
                                                         style: TextStyle(
-                                                          fontSize: 18,
+                                                          fontSize: 20,
                                                         ),
+                                                      ),
+                                                      Container(
+                                                        height: 10,
                                                       ),
                                                       Text('Health Zone',
                                                         style: TextStyle(
@@ -668,15 +676,15 @@ class HomePage extends StatelessWidget {
                                                     ],
                                                   ),
                                                   Container(
-                                                    width: 40,
-                                                    height: 40,
+                                                    width: 60,
+                                                    height: 60,
                                                     margin: EdgeInsets.only(left: 10),
                                                     decoration: BoxDecoration(
                                                       shape: BoxShape.circle,
                                                       color: GlobalStyle.light_green,
                                                     ),
                                                     child: Center(
-                                                      child: Icon(Icons.ac_unit),
+                                                      child: Icon(Icons.wind_power_outlined, color: GlobalStyle.green,),
                                                     ),
                                                   )
                                                 ],
@@ -691,7 +699,7 @@ class HomePage extends StatelessWidget {
                                               Text('Water Balance',
                                                 style: TextStyle(
                                                   color: GlobalStyle.green,
-                                                  fontSize: 18,
+                                                  fontSize: 20,
                                                 ),
                                               ),
                                               Container(
@@ -709,23 +717,26 @@ class HomePage extends StatelessWidget {
                                                           fontSize: 14,
                                                         ),
                                                       ),
+                                                      Container(
+                                                        height: 15,
+                                                      ),
                                                       Text('1250ml / 2000ml',
                                                         style: TextStyle(
-                                                          fontSize: 18,
+                                                          fontSize: 20,
                                                         ),
                                                       ),
                                                     ],
                                                   ),
                                                   Container(
-                                                    width: 30,
-                                                    height: 30,
+                                                    width: 60,
+                                                    height: 60,
                                                     margin: EdgeInsets.only(left: 10),
                                                     decoration: BoxDecoration(
                                                       shape: BoxShape.circle,
                                                       color: GlobalStyle.light_green,
                                                     ),
                                                     child: Center(
-                                                      child: Icon(Icons.ac_unit),
+                                                      child: Icon(Icons.add, color: GlobalStyle.green,),
                                                     ),
                                                   )
                                                 ],
@@ -734,6 +745,9 @@ class HomePage extends StatelessWidget {
                                           ),
                                         ),
                                       ],
+                                    ),
+                                    Container(
+                                      height: 40,
                                     ),
                                   ],
                                 ),
@@ -1099,8 +1113,8 @@ class Training extends StatelessWidget {
         Row(
           children: [
             Container(
-              width: 40,
-              height: 40,
+              width: 65,
+              height: 65,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: GlobalStyle.light_green,
@@ -1119,6 +1133,9 @@ class Training extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 16,
                   ),
+                ),
+                Container(
+                  height: 10,
                 ),
                 Text(subtitle,
                   style: TextStyle(
