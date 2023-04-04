@@ -103,33 +103,29 @@ class HomePage extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          // TextField(
-                          //   decoration:
-                          //   InputDecoration(
-                          //     border:
-                          //   ),
-                          // ),
                           Container(
                             width: 600.w,
                             height: 70.w,
+                            padding: EdgeInsets.all(10.0),
                             decoration: BoxDecoration(
                               color: GlobalStyle.light_green,
                               borderRadius: BorderRadius.circular(30.r),
                             ),
-                            child: Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 10),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text('Type here to search...',
-                                    style: TextStyle(
-                                      color: GlobalStyle.gray,
-                                      fontSize: 22.sp,
-                                    ),
-                                  ),
-                                  Icon(Icons.search_rounded, color: GlobalStyle.green, size: 40.sp,),
-                                ],
+                            child:
+                            TextField(
+                              cursorColor: Colors.black,
+                              cursorWidth: 1,
+                              decoration:
+                              InputDecoration(
+                                  border: InputBorder.none,
+                                  suffixIcon: Icon(Icons.search),
+                                  hintText: 'Type here to search...',
+                                  helperStyle: TextStyle(
+                                    fontSize: 14.sp,
+                                    fontWeight: FontWeight.w400,
+                                  )
                               ),
+
                             ),
                           ),
                           Row(
@@ -373,40 +369,42 @@ class HomePage extends StatelessWidget {
                               padding: EdgeInsets.symmetric(vertical: 25.w, horizontal: 30.w),
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                borderRadius: BorderRadius.circular(25.r),
+                                borderRadius: BorderRadius.circular(60.r),
                                 boxShadow: shadow
                               ),
                               child: Column(
                                 children: [
                                   Container(
-                                    height: 70,
+                                    height: 120.w,
                                     decoration: BoxDecoration(
                                       gradient: LinearGradient(
-                                          colors: [GlobalStyle.green, GlobalStyle.light_green],
+                                          colors: [GlobalStyle.green, Color(
+                                              0xff0ebfd2)],
                                           begin: Alignment.centerLeft,
                                           end: Alignment.bottomRight
                                       ),
-                                      borderRadius: BorderRadius.circular(20),
+                                      borderRadius: BorderRadius.circular(30.r),
                                     ),
                                     child: Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 15),
+                                      padding: EdgeInsets.symmetric(horizontal: 20.w),
                                       child: Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text('Advice! Connect your Apple Watch for better results.',
                                             style: TextStyle(
                                               color: GlobalStyle.white,
+                                              fontSize: 25.sp,
                                             ),
                                           ),
                                           Container(
-                                            width: 50,
-                                            height: 50,
+                                            width: 100.h,
+                                            height: 100.h,
                                             decoration: BoxDecoration(
                                               color: Colors.white,
-                                              borderRadius: BorderRadius.circular(20),
+                                              borderRadius: BorderRadius.circular(30.r),
                                             ),
                                             child: Center(
-                                              child: Icon(Icons.wifi_outlined, color: GlobalStyle.green,),
+                                              child: Icon(Icons.wifi_outlined, color: GlobalStyle.green, size: 35.sp,),
                                             ),
                                           ),
                                         ],
@@ -414,7 +412,7 @@ class HomePage extends StatelessWidget {
                                     ),
                                   ),
                                   Container(
-                                    height: 30,
+                                    height: 40,
                                   ),
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -423,12 +421,12 @@ class HomePage extends StatelessWidget {
                                         child: Text('Popular Training',
                                           style: TextStyle(
                                             color: GlobalStyle.green,
-                                            fontSize: 18,
+                                            fontSize: 30.sp,
                                           ),
                                         ),
                                       ),
                                       Container(
-                                        height: 25,
+                                        height: 30,
                                       ),
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -439,7 +437,7 @@ class HomePage extends StatelessWidget {
                                         ],
                                       ),
                                       Container(
-                                        height: 50,
+                                        height: 60,
                                       ),
                                       Row(
                                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -453,15 +451,15 @@ class HomePage extends StatelessWidget {
                                                 Text('Activity Statistic',
                                                   style: TextStyle(
                                                     color: GlobalStyle.green,
-                                                    fontSize: 18,
+                                                    fontSize: 30.sp,
                                                   ),
                                                 ),
                                                 Container(
-                                                  height: 10,
+                                                  height: 20,
                                                 ),
                                                 Container(
-                                                  width: 400,
-                                                  height: 330,
+                                                  width: 600.w,
+                                                  height: 600.w,
                                                   color: Colors.grey.shade100,
                                                 ),
                                               ],
@@ -470,8 +468,6 @@ class HomePage extends StatelessWidget {
                                           Flexible(
                                             flex: 1,
                                             child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              mainAxisAlignment: MainAxisAlignment.start,
                                               children: [
                                                 Row(
                                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -479,29 +475,29 @@ class HomePage extends StatelessWidget {
                                                     Text('My Training',
                                                       style: TextStyle(
                                                         color: GlobalStyle.green,
-                                                        fontSize: 18,
+                                                        fontSize: 30.sp,
                                                       ),
                                                     ),
                                                     Container(
-                                                      width: 30,
-                                                      height: 25,
+                                                      width: 50.w,
+                                                      height: 45.w,
                                                       decoration: BoxDecoration(
                                                         color: GlobalStyle.light_green,
-                                                        borderRadius: BorderRadius.circular(10),
+                                                        borderRadius: BorderRadius.circular(20.r),
                                                       ),
                                                       child: Center(
-                                                        child: Icon(Icons.add, color: GlobalStyle.green,),
+                                                        child: Icon(Icons.add, color: GlobalStyle.green, size: 30.sp,),
                                                       ),
                                                     ),
                                                   ],
                                                 ),
                                                 Container(
-                                                  height: 30,
+                                                  height: 20,
                                                 ),
                                                 Container(
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
-                                                    borderRadius: BorderRadius.circular(15),
+                                                    borderRadius: BorderRadius.circular(25.r),
                                                     boxShadow: [BoxShadow(
                                                       blurRadius: 5.0,
                                                       color: Colors.grey.shade100,
@@ -511,17 +507,21 @@ class HomePage extends StatelessWidget {
                                                   child: Column(
                                                     children: [
                                                       Padding(
-                                                        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15,),
+                                                        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 18,),
                                                         child: Row(
                                                           children: [
                                                             Flexible(
                                                               flex: 1,
                                                               fit: FlexFit.tight,
-                                                              child: Text('Training'),
+                                                              child: Text('Training', style: TextStyle(
+                                                                fontSize: 24.sp,
+                                                              ),),
                                                             ),
                                                             Flexible(
                                                               flex: 1,
-                                                              child: Text('TRX Cardio'),
+                                                              child: Text('TRX Cardio', style: TextStyle(
+                                                                fontSize: 24.sp,
+                                                              ),),
                                                             ),
                                                           ],
                                                         ),
@@ -537,11 +537,15 @@ class HomePage extends StatelessWidget {
                                                             Flexible(
                                                               flex: 1,
                                                               fit: FlexFit.tight,
-                                                              child: Text('Burend'),
+                                                              child: Text('Burend', style: TextStyle(
+                                                                fontSize: 24.sp,
+                                                              ),),
                                                             ),
                                                             Flexible(
                                                               flex: 1,
-                                                              child: Text('350 Kcal'),
+                                                              child: Text('350 Kcal', style: TextStyle(
+                                                                fontSize: 24.sp,
+                                                              ),),
                                                             ),
                                                           ],
                                                         ),
@@ -553,11 +557,15 @@ class HomePage extends StatelessWidget {
                                                             Flexible(
                                                               flex: 1,
                                                               fit: FlexFit.tight,
-                                                              child: Text('Spend'),
+                                                              child: Text('Spend', style: TextStyle(
+                                                                fontSize: 24.sp,
+                                                              ),),
                                                             ),
                                                             Flexible(
                                                               flex: 1,
-                                                              child: Text('1hr 45m'),
+                                                              child: Text('1hr 45m', style: TextStyle(
+                                                                fontSize: 24.sp,
+                                                              ),),
                                                             ),
                                                           ],
                                                         ),
@@ -587,11 +595,15 @@ class HomePage extends StatelessWidget {
                                                             Flexible(
                                                               flex: 1,
                                                               fit: FlexFit.tight,
-                                                              child: Text('Training'),
+                                                              child: Text('Training', style: TextStyle(
+                                                                fontSize: 24.sp,
+                                                              ),),
                                                             ),
                                                             Flexible(
                                                               flex: 1,
-                                                              child: Text('Stretching'),
+                                                              child: Text('Stretching', style: TextStyle(
+                                                                fontSize: 24.sp,
+                                                              ),),
                                                             ),
                                                           ],
                                                         ),
@@ -607,11 +619,15 @@ class HomePage extends StatelessWidget {
                                                             Flexible(
                                                               flex: 1,
                                                               fit: FlexFit.tight,
-                                                              child: Text('Burend'),
+                                                              child: Text('Burend', style: TextStyle(
+                                                                fontSize: 24.sp,
+                                                              ),),
                                                             ),
                                                             Flexible(
                                                               flex: 1,
-                                                              child: Text('180 Kcal'),
+                                                              child: Text('180 Kcal', style: TextStyle(
+                                                                fontSize: 24.sp,
+                                                              ),),
                                                             ),
                                                           ],
                                                         ),
@@ -623,11 +639,15 @@ class HomePage extends StatelessWidget {
                                                             Flexible(
                                                               flex: 1,
                                                               fit: FlexFit.tight,
-                                                              child: Text('Spend'),
+                                                              child: Text('Spend', style: TextStyle(
+                                                                fontSize: 24.sp,
+                                                              ),),
                                                             ),
                                                             Flexible(
                                                               flex: 1,
-                                                              child: Text('30m'),
+                                                              child: Text('30m', style: TextStyle(
+                                                                fontSize: 24.sp,
+                                                              ),),
                                                             ),
                                                           ],
                                                         ),
@@ -641,7 +661,7 @@ class HomePage extends StatelessWidget {
                                         ],
                                       ),
                                       Container(
-                                        height: 70,
+                                        height: 50,
                                       ),
                                       Row(
                                         children: [
@@ -653,7 +673,7 @@ class HomePage extends StatelessWidget {
                                                 Text('Heart Rate',
                                                   style: TextStyle(
                                                     color: GlobalStyle.green,
-                                                    fontSize: 20,
+                                                    fontSize: 37.sp,
                                                   ),
                                                 ),
                                                 Container(
@@ -667,7 +687,7 @@ class HomePage extends StatelessWidget {
                                                       children: [
                                                         Text('75 bpm',
                                                           style: TextStyle(
-                                                            fontSize: 20,
+                                                            fontSize: 35.sp,
                                                           ),
                                                         ),
                                                         Container(
@@ -676,7 +696,7 @@ class HomePage extends StatelessWidget {
                                                         Text('Health Zone',
                                                           style: TextStyle(
                                                             color: GlobalStyle.green,
-                                                            fontSize: 14,
+                                                            fontSize: 25.sp,
                                                           ),),
                                                       ],
                                                     ),
@@ -689,7 +709,7 @@ class HomePage extends StatelessWidget {
                                                         color: GlobalStyle.light_green,
                                                       ),
                                                       child: Center(
-                                                        child: Icon(Icons.wind_power_outlined, color: GlobalStyle.green,),
+                                                        child: Icon(Icons.wind_power_outlined, color: GlobalStyle.green, size: 35.sp,),
                                                       ),
                                                     )
                                                   ],
@@ -704,11 +724,11 @@ class HomePage extends StatelessWidget {
                                                 Text('Water Balance',
                                                   style: TextStyle(
                                                     color: GlobalStyle.green,
-                                                    fontSize: 20,
+                                                    fontSize: 37.sp,
                                                   ),
                                                 ),
                                                 Container(
-                                                  height: 10,
+                                                  height: 20,
                                                 ),
                                                 Row(
                                                   mainAxisAlignment: MainAxisAlignment.start,
@@ -719,15 +739,15 @@ class HomePage extends StatelessWidget {
                                                         Text('Drunk',
                                                           style: TextStyle(
                                                             color: GlobalStyle.gray,
-                                                            fontSize: 14,
+                                                            fontSize: 25.sp,
                                                           ),
                                                         ),
                                                         Container(
-                                                          height: 15,
+                                                          height: 10,
                                                         ),
                                                         Text('1250ml / 2000ml',
                                                           style: TextStyle(
-                                                            fontSize: 20,
+                                                            fontSize: 35.sp,
                                                           ),
                                                         ),
                                                       ],
@@ -741,7 +761,7 @@ class HomePage extends StatelessWidget {
                                                         color: GlobalStyle.light_green,
                                                       ),
                                                       child: Center(
-                                                        child: Icon(Icons.add, color: GlobalStyle.green,),
+                                                        child: Icon(Icons.add, color: GlobalStyle.green, size: 35.sp,),
                                                       ),
                                                     )
                                                   ],
@@ -1129,8 +1149,8 @@ class Training extends StatelessWidget {
         Row(
           children: [
             Container(
-              width: 65,
-              height: 65,
+              width: 100.w,
+              height: 100.w,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: GlobalStyle.light_green,
@@ -1147,15 +1167,15 @@ class Training extends StatelessWidget {
               children: [
                 Text(title,
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 25.sp,
                   ),
                 ),
                 Container(
-                  height: 10,
+                  height: 7,
                 ),
                 Text(subtitle,
                   style: TextStyle(
-                    fontSize: 14,
+                    fontSize: 25.sp,
                     color: GlobalStyle.gray,
                   ),),
               ],
