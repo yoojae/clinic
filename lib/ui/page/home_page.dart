@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
                         child: Text('Dashboard',
                           style: TextStyle(
                             color: GlobalStyle.white,
-                            fontSize: 30.sp,
+                            fontSize: 28.sp,
                             fontWeight: FontWeight.w600
                           ),
                         ),
@@ -87,9 +87,7 @@ class HomePage extends StatelessWidget {
               ),
               child: SingleChildScrollView(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-
                     // -------------------------Header-----------------------------
                     Container(
                       height: 150.h,
@@ -119,7 +117,7 @@ class HomePage extends StatelessWidget {
                               InputDecoration(
                                   border: InputBorder.none,
                                   suffixIcon: Icon(Icons.search),
-                                  hintText: 'Type here to search...',
+                                  hintText: '검색어를 입력하세요...',
                                   helperStyle: TextStyle(
                                     fontSize: 14.sp,
                                     fontWeight: FontWeight.w400,
@@ -170,12 +168,12 @@ class HomePage extends StatelessWidget {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text('Bini Jets',
+                                      Text('김민지',
                                         style: TextStyle(
                                           fontSize: 29.sp,
                                         ),
                                       ),
-                                      Text('Available',
+                                      Text('사용자',
                                         style: TextStyle(
                                           fontSize: 20.sp,
                                           color: GlobalStyle.green,
@@ -193,175 +191,172 @@ class HomePage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 30,),
                       child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
 
                           // -------------------------Left Box-----------------------------
                           Flexible(
                             flex: 1,
-                            child: Padding(
-                              padding: const EdgeInsets.only(right: 30,),
-                              child: Column(
-                                children: [
-                                  // -------------------------Profile-----------------------------
-                                  Stack(
-                                    children: [
-                                      Positioned(
-                                        child: Container(
-                                          padding: EdgeInsets.fromLTRB(0, 135.w, 0, 20),
-                                          margin: EdgeInsets.only(top: 115.w),
-                                          width: double.infinity,
-                                          decoration: BoxDecoration(
-                                            color: GlobalStyle.white,
-                                            borderRadius: BorderRadius.circular(25),
-                                            boxShadow: shadow
-                                          ),
-                                          child: Column(
-                                            children: [
-                                              Text('Bess Willis',
-                                                style: TextStyle(
-                                                    color: GlobalStyle.dark,
-                                                    fontSize: 37.sp,
-                                                  fontWeight: FontWeight.w600
-                                                ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                // -------------------------Profile-----------------------------
+                                Stack(
+                                  children: [
+                                    Positioned(
+                                      child: Container(
+                                        padding: EdgeInsets.fromLTRB(0, 135.w, 0, 20),
+                                        margin: EdgeInsets.only(top: 115.w),
+                                        width: double.infinity,
+                                        decoration: BoxDecoration(
+                                          color: GlobalStyle.white,
+                                          borderRadius: BorderRadius.circular(25),
+                                          boxShadow: shadow
+                                        ),
+                                        child: Column(
+                                          children: [
+                                            Text('Bess Willis',
+                                              style: TextStyle(
+                                                  color: GlobalStyle.dark,
+                                                  fontSize: 37.sp,
+                                                fontWeight: FontWeight.w600
                                               ),
-                                              Container(height: 8,),
-                                              Text('27 years, California',
-                                                style: TextStyle(
-                                                    color: GlobalStyle.gray,
-                                                  fontSize: 27.sp,
-                                                ),
+                                            ),
+                                            Container(height: 8,),
+                                            Text('27 years, California',
+                                              style: TextStyle(
+                                                  color: GlobalStyle.gray,
+                                                fontSize: 27.sp,
                                               ),
-                                              Container(height: 42,),
-                                              Row(
-                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                children: [
-                                                  Flexible(
-                                                    flex: 1,
-                                                    fit: FlexFit.tight,
-                                                      child: Column(
-                                                        children: [
-                                                          Text('Weight',
-                                                            style: TextStyle(
-                                                              color: GlobalStyle.green,
-                                                              fontSize: 30.sp,
-                                                            ),
+                                            ),
+                                            Container(height: 42,),
+                                            Row(
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                Flexible(
+                                                  flex: 1,
+                                                  fit: FlexFit.tight,
+                                                    child: Column(
+                                                      children: [
+                                                        Text('Weight',
+                                                          style: TextStyle(
+                                                            color: GlobalStyle.green,
+                                                            fontSize: 30.sp,
                                                           ),
-                                                          Container(height: 5,),
-                                                          Text('60kg',
-                                                            style: TextStyle(
+                                                        ),
+                                                        Container(height: 5,),
+                                                        Text('60kg',
+                                                          style: TextStyle(
+                                                            fontSize: 45.sp,
+                                                            color: GlobalStyle.dark
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                Container(
+                                                  width: 1,
+                                                  height: 100.w,
+                                                  color: GlobalStyle.light_gray,
+                                                ),
+                                                Flexible(
+                                                  flex: 1,
+                                                  fit: FlexFit.tight,
+                                                  child: Column(
+                                                      children: [
+                                                        Text('Height',
+                                                          style: TextStyle(
+                                                              color: GlobalStyle.green,
+                                                              fontSize: 30.sp
+                                                          ),
+                                                        ),
+                                                        Container(height: 5,),
+                                                        Text('170cm',
+                                                          style: TextStyle(
                                                               fontSize: 45.sp,
                                                               color: GlobalStyle.dark
-                                                            ),
                                                           ),
-                                                        ],
-                                                      ),
+                                                        ),
+                                                      ],
                                                     ),
-                                                  Container(
-                                                    width: 1,
-                                                    height: 100.w,
-                                                    color: GlobalStyle.light_gray,
                                                   ),
-                                                  Flexible(
-                                                    flex: 1,
-                                                    fit: FlexFit.tight,
-                                                    child: Column(
-                                                        children: [
-                                                          Text('Height',
-                                                            style: TextStyle(
-                                                                color: GlobalStyle.green,
-                                                                fontSize: 30.sp
-                                                            ),
+                                                Container(
+                                                  width: 1,
+                                                  height: 100.w,
+                                                  color: GlobalStyle.light_gray,
+                                                ),
+                                                Flexible(
+                                                  flex: 1,
+                                                  fit: FlexFit.tight,
+                                                  child: Column(
+                                                      children: [
+                                                        Text('Goal',
+                                                          style: TextStyle(
+                                                              color: GlobalStyle.green,
+                                                              fontSize: 30.sp
                                                           ),
-                                                          Container(height: 5,),
-                                                          Text('170cm',
-                                                            style: TextStyle(
-                                                                fontSize: 45.sp,
-                                                                color: GlobalStyle.dark
-                                                            ),
+                                                        ),
+                                                        Container(height: 5,),
+                                                        Text('55kg',
+                                                          style: TextStyle(
+                                                              fontSize: 45.sp,
+                                                              color: GlobalStyle.yellow
                                                           ),
-                                                        ],
-                                                      ),
+                                                        ),
+                                                      ],
                                                     ),
-                                                  Container(
-                                                    width: 1,
-                                                    height: 100.w,
-                                                    color: GlobalStyle.light_gray,
                                                   ),
-                                                  Flexible(
-                                                    flex: 1,
-                                                    fit: FlexFit.tight,
-                                                    child: Column(
-                                                        children: [
-                                                          Text('Goal',
-                                                            style: TextStyle(
-                                                                color: GlobalStyle.green,
-                                                                fontSize: 30.sp
-                                                            ),
-                                                          ),
-                                                          Container(height: 5,),
-                                                          Text('55kg',
-                                                            style: TextStyle(
-                                                                fontSize: 45.sp,
-                                                                color: GlobalStyle.yellow
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                ],
-                                              ),
-                                              Container(height: 32,)
-                                            ],
-                                          ),
+                                              ],
+                                            ),
+                                            Container(height: 32,),
+                                          ],
                                         ),
                                       ),
-                                      Positioned(
-                                        left: 0,
-                                        right: 0,
-                                        child: Container(
-                                          width: 230.w,
-                                          height: 230.w,
-                                          child: Image.asset('images/png/11.png'),
-                                        ),
+                                    ),
+                                    Positioned(
+                                      left: 0,
+                                      right: 0,
+                                      child: Container(
+                                        width: 230.w,
+                                        height: 230.w,
+                                        child: Image.asset('images/png/11.png'),
                                       ),
+                                    ),
+                                  ],
+                                ),
+                                // Container(
+                                //   height: 30,
+                                // ),
+
+                                // -------------------------MyGoal-----------------------------
+                                Container(
+                                  padding: EdgeInsets.symmetric(
+                                    vertical: 30,
+                                    horizontal: 30
+                                  ),
+                                  width: double.infinity,
+                                  decoration: BoxDecoration(
+                                    color: GlobalStyle.white,
+                                    borderRadius: BorderRadius.circular(25),
+                                    boxShadow: shadow
+                                  ),
+                                  child: Column(
+                                    children: [
+                                      MyGoal(type: 'Walked', progress: '4532', unit: 'steps', goal: '6500'),
+                                      Container(height: 30,),
+                                      Container(
+                                        height: 1,
+                                        color: GlobalStyle.light_gray,
+                                      ),
+                                      Container(height: 30,),
+                                      MyGoal(type: 'Burned', progress: '325', unit: 'kcal', goal: '800'),
+                                      Container(height: 22,)
                                     ],
                                   ),
-                                  Container(
-                                    height: 30,
-                                  ),
-
-                                  // -------------------------MyGoal-----------------------------
-                                  Container(
-                                    padding: EdgeInsets.symmetric(
-                                      vertical: 30,
-                                      horizontal: 30
-                                    ),
-                                    width: double.infinity,
-                                    decoration: BoxDecoration(
-                                      color: GlobalStyle.white,
-                                      borderRadius: BorderRadius.circular(25),
-                                      boxShadow: shadow
-                                    ),
-                                    child: Column(
-                                      children: [
-                                        MyGoal(type: 'Walked', progress: '4532', unit: 'steps', goal: '6500'),
-                                        Container(height: 30,),
-                                        Container(
-                                          height: 1,
-                                          color: GlobalStyle.light_gray,
-                                        ),
-                                        Container(height: 30,),
-                                        MyGoal(type: 'Burned', progress: '325', unit: 'kcal', goal: '800'),
-                                        Container(height: 22,)
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ),
-
+                          Container(width: 30,),
                           // -------------------------Right Box-----------------------------
                           Flexible(
                             flex: 2,
@@ -390,7 +385,7 @@ class HomePage extends StatelessWidget {
                                       child: Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
-                                          Text('Advice! Connect your Apple Watch for better results.',
+                                          Text('더 나은 결과를 얻으려면 Apple Watch를 연결하세요!',
                                             style: TextStyle(
                                               color: GlobalStyle.white,
                                               fontSize: 25.sp,
@@ -418,7 +413,7 @@ class HomePage extends StatelessWidget {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Container(
-                                        child: Text('Popular Training',
+                                        child: Text('인기 트레이닝',
                                           style: TextStyle(
                                             color: GlobalStyle.green,
                                             fontSize: 30.sp,
@@ -431,9 +426,9 @@ class HomePage extends StatelessWidget {
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                                         children: [
-                                          Training(title: 'Power Training', subtitle: '395 kcal / h', image: Image.asset('images/png/34.png'),),
-                                          Training(title: 'Yoga Training', subtitle: '395 kcal / h', image: Image.asset('images/png/35.png'),),
-                                          Training(title: 'Stretching', subtitle: '395 kcal / h', image: Image.asset('images/png/36.png'),),
+                                          Training(title: '파워 트레이닝', subtitle: '395 kcal / h', image: Image.asset('images/png/34.png'),),
+                                          Training(title: '요가 트레이닝', subtitle: '395 kcal / h', image: Image.asset('images/png/35.png'),),
+                                          Training(title: '스트레칭', subtitle: '395 kcal / h', image: Image.asset('images/png/36.png'),),
                                         ],
                                       ),
                                       Container(
@@ -448,7 +443,7 @@ class HomePage extends StatelessWidget {
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
-                                                Text('Activity Statistic',
+                                                Text('활동 통계',
                                                   style: TextStyle(
                                                     color: GlobalStyle.green,
                                                     fontSize: 30.sp,
@@ -472,7 +467,7 @@ class HomePage extends StatelessWidget {
                                                 Row(
                                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                   children: [
-                                                    Text('My Training',
+                                                    Text('나의 트레이닝',
                                                       style: TextStyle(
                                                         color: GlobalStyle.green,
                                                         fontSize: 30.sp,
@@ -513,13 +508,13 @@ class HomePage extends StatelessWidget {
                                                             Flexible(
                                                               flex: 1,
                                                               fit: FlexFit.tight,
-                                                              child: Text('Training', style: TextStyle(
+                                                              child: Text('트레이닝', style: TextStyle(
                                                                 fontSize: 24.sp,
                                                               ),),
                                                             ),
                                                             Flexible(
                                                               flex: 1,
-                                                              child: Text('TRX Cardio', style: TextStyle(
+                                                              child: Text('TRX 운동', style: TextStyle(
                                                                 fontSize: 24.sp,
                                                               ),),
                                                             ),
@@ -537,7 +532,7 @@ class HomePage extends StatelessWidget {
                                                             Flexible(
                                                               flex: 1,
                                                               fit: FlexFit.tight,
-                                                              child: Text('Burend', style: TextStyle(
+                                                              child: Text('열량소모', style: TextStyle(
                                                                 fontSize: 24.sp,
                                                               ),),
                                                             ),
@@ -557,7 +552,7 @@ class HomePage extends StatelessWidget {
                                                             Flexible(
                                                               flex: 1,
                                                               fit: FlexFit.tight,
-                                                              child: Text('Spend', style: TextStyle(
+                                                              child: Text('소요시간', style: TextStyle(
                                                                 fontSize: 24.sp,
                                                               ),),
                                                             ),
@@ -595,13 +590,13 @@ class HomePage extends StatelessWidget {
                                                             Flexible(
                                                               flex: 1,
                                                               fit: FlexFit.tight,
-                                                              child: Text('Training', style: TextStyle(
+                                                              child: Text('트레이닝', style: TextStyle(
                                                                 fontSize: 24.sp,
                                                               ),),
                                                             ),
                                                             Flexible(
                                                               flex: 1,
-                                                              child: Text('Stretching', style: TextStyle(
+                                                              child: Text('스트레칭', style: TextStyle(
                                                                 fontSize: 24.sp,
                                                               ),),
                                                             ),
@@ -619,7 +614,7 @@ class HomePage extends StatelessWidget {
                                                             Flexible(
                                                               flex: 1,
                                                               fit: FlexFit.tight,
-                                                              child: Text('Burend', style: TextStyle(
+                                                              child: Text('열량소모', style: TextStyle(
                                                                 fontSize: 24.sp,
                                                               ),),
                                                             ),
@@ -639,7 +634,7 @@ class HomePage extends StatelessWidget {
                                                             Flexible(
                                                               flex: 1,
                                                               fit: FlexFit.tight,
-                                                              child: Text('Spend', style: TextStyle(
+                                                              child: Text('소요시간', style: TextStyle(
                                                                 fontSize: 24.sp,
                                                               ),),
                                                             ),
@@ -670,7 +665,7 @@ class HomePage extends StatelessWidget {
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
-                                                Text('Heart Rate',
+                                                Text('심박수',
                                                   style: TextStyle(
                                                     color: GlobalStyle.green,
                                                     fontSize: 37.sp,
@@ -693,7 +688,7 @@ class HomePage extends StatelessWidget {
                                                         Container(
                                                           height: 10,
                                                         ),
-                                                        Text('Health Zone',
+                                                        Text('건강 데이터',
                                                           style: TextStyle(
                                                             color: GlobalStyle.green,
                                                             fontSize: 25.sp,
@@ -721,7 +716,7 @@ class HomePage extends StatelessWidget {
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
-                                                Text('Water Balance',
+                                                Text('수분 밸런스',
                                                   style: TextStyle(
                                                     color: GlobalStyle.green,
                                                     fontSize: 37.sp,
@@ -736,7 +731,7 @@ class HomePage extends StatelessWidget {
                                                     Column(
                                                       crossAxisAlignment: CrossAxisAlignment.start,
                                                       children: [
-                                                        Text('Drunk',
+                                                        Text('섭취량',
                                                           style: TextStyle(
                                                             color: GlobalStyle.gray,
                                                             fontSize: 25.sp,
@@ -899,7 +894,7 @@ class Menu extends StatelessWidget {
           Text(menu,
             style: TextStyle(
               color: iconTextColor,
-              fontSize: 30.sp
+              fontSize: 28.sp
             ),
           )
         ],
