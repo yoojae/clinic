@@ -20,13 +20,13 @@ class LeftContents extends StatelessWidget {
               children: [
                 Positioned(
                   child: Container(
-                    padding: EdgeInsets.fromLTRB(0, 90.w, 0, 40.w),
+                    padding: EdgeInsets.fromLTRB(24.w, 90.w, 24.w, 30.w),
                     margin: EdgeInsets.only(top: 70.w),
                     width: double.infinity,
                     decoration: BoxDecoration(
                         color: GlobalStyle.white,
                         borderRadius: BorderRadius.circular(40.r),
-                        // boxShadow: shadow
+                        boxShadow: shadow
                     ),
                     child: Column(
                       children: [
@@ -37,7 +37,7 @@ class LeftContents extends StatelessWidget {
                               fontWeight: FontWeight.w600
                           ),
                         ),
-                        Container(height: 12.w,),
+                        Container(height: 10.w,),
                         Text('27세, 부산시 해운대구',
                           style: TextStyle(
                             color: GlobalStyle.gray,
@@ -83,26 +83,26 @@ class LeftContents extends StatelessWidget {
             // -------------------------MyGoal-----------------------------
             Container(
               padding: EdgeInsets.symmetric(
-                  vertical: 40.w,
-                  horizontal: 40.w
+                  vertical: 30.w,
+                  horizontal: 30.w
               ),
               width: double.infinity,
               decoration: BoxDecoration(
                   color: GlobalStyle.white,
-                  borderRadius: BorderRadius.circular(50.r),
-                  // boxShadow: shadow
+                  borderRadius: BorderRadius.circular(40.r),
+                  boxShadow: shadow
               ),
               child: Column(
                 children: [
                   MyGoal(type: '걸음', progress: '4532', unit: '걸음', goal: '6500'),
-                  Container(height: 60.w,),
+                  Container(height: 40.w,),
                   Container(
                     height: 1,
                     color: GlobalStyle.light_gray,
                   ),
-                  Container(height: 60.w,),
+                  Container(height: 40.w,),
                   MyGoal(type: '칼로리 소모', progress: '325', unit: 'kcal', goal: '800'),
-                  Container(height: 32.w,)
+                  Container(height: 22.w,)
                 ],
               ),
             ),
@@ -144,33 +144,33 @@ class MyGoal extends StatelessWidget {
                     Text(type,
                       style: TextStyle(
                           color: GlobalStyle.gray,
-                          fontSize: 20.sp
+                          fontSize: 18.sp
                       ),
                     ),
-                    Container(height: 16.w,),
+                    Container(height: 10.w,),
                     Text(progress + ' ' + unit,
                       style: TextStyle(
                           color: GlobalStyle.dark,
-                          fontSize: 26.sp
+                          fontSize: 22.sp
                       ),
                     )
                   ],
                 ),
-                Container(height: 40.w,),
+                Container(height: 24.w,),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text('나의 목표',
                       style: TextStyle(
                           color: GlobalStyle.gray,
-                          fontSize: 20.sp
+                          fontSize: 18.sp
                       ),
                     ),
-                    Container(height: 16.w,),
+                    Container(height: 10.w,),
                     Text(goal + ' ' + unit,
                         style: TextStyle(
                             color: GlobalStyle.dark,
-                            fontSize: 26.sp
+                            fontSize: 22.sp
                         )
                     ),
                   ],
@@ -178,13 +178,13 @@ class MyGoal extends StatelessWidget {
               ],
             ),
             Container(
-              margin: EdgeInsets.only(right: 28.w),
-              width: 170.w,
-              height: 170.w,
+              margin: EdgeInsets.only(right: 38.w),
+              width: 150.w,
+              height: 150.w,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(150.r),
                   border: Border.all(
-                      width: 7.w,
+                      width: 6.w,
                       style: BorderStyle.solid,
                       color: GlobalStyle.light_gray
                   )
@@ -193,7 +193,7 @@ class MyGoal extends StatelessWidget {
                 child: Text(progress,
                   style: TextStyle(
                     color: GlobalStyle.gray,
-                    fontSize: 34.sp,
+                    fontSize: 30.sp,
                   ),
                 ),
               ),
@@ -214,7 +214,7 @@ class MyGoal extends StatelessWidget {
                   Text('탄수화물',
                     style: TextStyle(
                         color: GlobalStyle.green,
-                        fontSize: 27.sp
+                        fontSize: 18.sp
                     ),
                   ),
                   Container(height: 16.w,),
@@ -222,7 +222,7 @@ class MyGoal extends StatelessWidget {
                     children: [
                       Container(
                         width: double.infinity,
-                        height: 11.w,
+                        height: 6.w,
                         decoration: BoxDecoration(
                             color: GlobalStyle.lighter_gray,
                             borderRadius: BorderRadius.circular(50.r)
@@ -230,7 +230,7 @@ class MyGoal extends StatelessWidget {
                       ),
                       Container(
                         width: 70.w,
-                        height: 11.w,
+                        height: 6.w,
                         decoration: BoxDecoration(
                             color: GlobalStyle.green,
                             borderRadius: BorderRadius.circular(50.r)
@@ -251,7 +251,7 @@ class MyGoal extends StatelessWidget {
                   Text('단백질',
                     style: TextStyle(
                         color: GlobalStyle.green,
-                        fontSize: 27.sp
+                        fontSize: 18.sp
                     ),
                   ),
                   Container(height: 16.w,),
@@ -259,7 +259,7 @@ class MyGoal extends StatelessWidget {
                     children: [
                       Container(
                         width: double.infinity,
-                        height: 11.w,
+                        height: 6.w,
                         decoration: BoxDecoration(
                             color: GlobalStyle.lighter_gray,
                             borderRadius: BorderRadius.circular(50.r)
@@ -267,7 +267,7 @@ class MyGoal extends StatelessWidget {
                       ),
                       Container(
                         width: 70.w,
-                        height: 11.w,
+                        height: 6.w,
                         decoration: BoxDecoration(
                             color: GlobalStyle.red,
                             borderRadius: BorderRadius.circular(50.r)
@@ -288,7 +288,7 @@ class MyGoal extends StatelessWidget {
                   Text('지방',
                     style: TextStyle(
                         color: GlobalStyle.green,
-                        fontSize: 27.sp
+                        fontSize: 18.sp
                     ),
                   ),
                   Container(height: 16.w,),
@@ -296,7 +296,7 @@ class MyGoal extends StatelessWidget {
                     children: [
                       Container(
                         width: double.infinity,
-                        height: 11.w,
+                        height: 6.w,
                         decoration: BoxDecoration(
                             color: GlobalStyle.lighter_gray,
                             borderRadius: BorderRadius.circular(50.r)
@@ -304,7 +304,7 @@ class MyGoal extends StatelessWidget {
                       ),
                       Container(
                         width: 70.w,
-                        height: 11.w,
+                        height: 6.w,
                         decoration: BoxDecoration(
                             color: GlobalStyle.light_blue,
                             borderRadius: BorderRadius.circular(50.r)
@@ -330,19 +330,6 @@ var TextButtonStyle = ButtonStyle(
     padding: MaterialStatePropertyAll(EdgeInsets.zero),
     overlayColor: MaterialStatePropertyAll(Colors.transparent)
 );
-
-
-
-
-
-
-var shadow = [BoxShadow(
-  color: GlobalStyle.gray.withOpacity(0.1),
-  blurRadius: 5.0,
-  spreadRadius: 0.0,
-  offset: Offset(2,3),
-)];
-
 
 
 class ProfileFlex extends StatelessWidget {
@@ -371,7 +358,6 @@ class ProfileFlex extends StatelessWidget {
               fontSize: 20.sp,
             ),
           ),
-          Container(height: 4.w,),
           RichText(
             text: TextSpan(
                 text: num,

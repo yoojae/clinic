@@ -17,3 +17,12 @@ class GlobalStyle {
   static const Color dark = Color(0xFF3F414D);
   static const Color light_dark = Color(0xFF777D74);
   }
+
+
+var shadow = [BoxShadow(
+  color: GlobalStyle.gray.withOpacity(0.1),
+  blurRadius: 5.0,
+  spreadRadius: 0.0,
+  offset: Offset(2,3),
+)];
+

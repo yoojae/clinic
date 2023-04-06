@@ -14,7 +14,7 @@ class RightContentsHeader extends StatelessWidget {
       decoration: BoxDecoration(
           color: GlobalStyle.white,
           borderRadius: BorderRadius.circular(30.r),
-          // boxShadow: shadow
+          boxShadow: shadow
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
