@@ -9,23 +9,23 @@ class RightContentsHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 40.w, horizontal: 60.w,),
-      padding: EdgeInsets.symmetric(vertical: 30.w, horizontal: 40.w),
+      margin: EdgeInsets.symmetric(vertical: 30.w,),
+      padding: EdgeInsets.symmetric(vertical: 12.w, horizontal: 20.w),
       decoration: BoxDecoration(
           color: GlobalStyle.white,
-          borderRadius: BorderRadius.circular(60.r),
-          // boxShadow: shadow
+          borderRadius: BorderRadius.circular(30.r),
+          boxShadow: shadow
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
             width: 600.w,
-            height: 70.w,
-            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            height: 40.w,
+            padding: EdgeInsets.symmetric(horizontal: 10.w),
             decoration: BoxDecoration(
               color: GlobalStyle.light_green,
-              borderRadius: BorderRadius.circular(18.r),
+              borderRadius: BorderRadius.circular(12.r),
             ),
             child:
             Center(
@@ -36,11 +36,11 @@ class RightContentsHeader extends StatelessWidget {
                 InputDecoration(
                     border: InputBorder.none,
                     suffixIcon: Icon(Icons.search,
-                      size: 38.sp,
+                      size: 32.sp,
                     ),
                     hintText: '검색어를 입력해주세요...',
                     hintStyle: TextStyle(
-                      fontSize: 26.sp,
+                      fontSize: 16.sp,
                       fontWeight: FontWeight.w400,
                     )
                 ),
@@ -52,38 +52,38 @@ class RightContentsHeader extends StatelessWidget {
               Text('English',
                 style: TextStyle(
                   color: GlobalStyle.green,
-                  fontSize: 25.sp,
+                  fontSize: 18.sp,
                 ),
               ),
-              Icon(Icons.arrow_drop_down_outlined, color: GlobalStyle.green, size: 40.sp,),
+              Icon(Icons.arrow_drop_down_outlined, color: GlobalStyle.green, size: 22.sp,),
               Container(
-                width: 40.w,
+                width: 38.w,
               ),
-              Icon(Icons.crop_free_rounded, color: GlobalStyle.green, size: 40.sp,),
+              Icon(Icons.crop_free_rounded, color: GlobalStyle.green, size: 26.sp,),
               Container(
-                width: 40.w,
+                width: 38.w,
               ),
-              Icon(Icons.notifications, color: GlobalStyle.green, size: 40.sp,),
+              Icon(Icons.notifications, color: GlobalStyle.green, size: 26.sp,),
               Container(
-                width: 40.w,
+                width: 38.w,
               ),
-              Icon(Icons.mail_rounded, color: GlobalStyle.green, size: 40.sp,),
+              Icon(Icons.mail_rounded, color: GlobalStyle.green, size: 26.sp,),
               Container(
-                width: 40.w,
+                width: 38.w,
               ),
               Row(
                 children: [
                   Container(
                     clipBehavior: Clip.hardEdge,
-                    width: 100.w,
-                    height: 100.h,
+                    width: 50.w,
+                    height: 50.w,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                     child: Image.asset('images/png/1.png'),
                   ),
                   Container(
-                    width: 20.w,
+                    width: 8.w,
                   ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -91,20 +91,21 @@ class RightContentsHeader extends StatelessWidget {
                     children: [
                       Text('김민지',
                         style: TextStyle(
-                            fontSize: 29.sp,
+                            fontSize: 16.sp,
                             fontWeight: FontWeight.w500,
                             color: GlobalStyle.dark
                         ),
                       ),
-                      Container(height: 10.w,),
+                      Container(height: 2.w,),
                       Text('사용자',
                         style: TextStyle(
-                          fontSize: 20.sp,
+                          fontSize: 12.sp,
                           color: GlobalStyle.green,
                         ),
                       ),
                     ],
                   ),
+                  Container(width: 5.w,),
                 ],
               ),
             ],

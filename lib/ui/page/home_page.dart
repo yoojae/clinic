@@ -79,6 +79,7 @@ class HomePage extends StatelessWidget {
           Flexible(
             flex: 9,
             child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 30.w,),
               height: double.infinity,
               decoration: BoxDecoration(
                 color: GlobalStyle.bg,
@@ -93,35 +94,32 @@ class HomePage extends StatelessWidget {
                   children: [
                     // -------------------------Header-----------------------------
                     const RightContentsHeader(),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 60.w,),
-                      child: Container(
-                        height: 1620.w,
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+                    Container(
+                      height: 1056.w,
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
 
-                            // -------------------------Left Box-----------------------------
-                            LeftContents(),
+                          // -------------------------Left Box-----------------------------
+                          LeftContents(),
 
-                            // -------------------------Right Box-----------------------------
-                            Flexible(
-                              flex: 2,
-                              child: RightContentsRight(),
-                            ),
-                          ],
-                        ),
+                          // -------------------------Right Box-----------------------------
+                          Flexible(
+                            flex: 2,
+                            child: RightContentsRight(),
+                          ),
+                        ],
                       ),
                     ),
 
                     // -------------------------Footer-----------------------------
                     Container(
-                      margin: EdgeInsets.all(60.w),
-                      padding: EdgeInsets.symmetric(horizontal: 60.w),
-                      height: 110.w,
+                      margin: EdgeInsets.symmetric(vertical: 30.w),
+                      padding: EdgeInsets.symmetric(horizontal: 30.w),
+                      height: 60.w,
                       decoration: BoxDecoration(
                         color: GlobalStyle.white,
-                        borderRadius: BorderRadius.circular(55.r),
+                        borderRadius: BorderRadius.circular(40.r),
                         boxShadow: shadow
                       ),
                       child: Row(
@@ -134,18 +132,18 @@ class HomePage extends StatelessWidget {
                                 child: Text('Privacy Policy',
                                   style: TextStyle(
                                     color: GlobalStyle.light_dark,
-                                    fontSize: 27.sp
+                                    fontSize: 16.sp
                                   ),
                                 ),
                                 style: TextButtonStyle
                               ),
-                              Container(width: 20.w,),
+                              Container(width: 12.w,),
                               TextButton(
                                 onPressed: () {},
                                 child: Text('Terms of Use',
                                   style: TextStyle(
                                       color: GlobalStyle.light_dark,
-                                      fontSize: 27.sp
+                                      fontSize: 16.sp
                                   ),
                                 ),
                                 style: TextButtonStyle,
@@ -157,7 +155,7 @@ class HomePage extends StatelessWidget {
                               Text('Copyright 2020 ',
                                 style: TextStyle(
                                     color: GlobalStyle.gray,
-                                    fontSize: 27.sp
+                                    fontSize: 16.sp
                                 ),
                               ),
                               TextButton(
@@ -165,7 +163,7 @@ class HomePage extends StatelessWidget {
                                 child: Text('XRay',
                                   style: TextStyle(
                                     color: GlobalStyle.green,
-                                      fontSize: 27.sp
+                                      fontSize: 16.sp
                                   ),
                                 ),
                                 style: TextButtonStyle,
@@ -173,7 +171,7 @@ class HomePage extends StatelessWidget {
                               Text(' All Rights Reserved.',
                                 style: TextStyle(
                                     color: GlobalStyle.gray,
-                                    fontSize: 27.sp
+                                    fontSize: 16.sp
                                 ),
                               )
                             ],
