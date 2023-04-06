@@ -27,44 +27,47 @@ class HomePage extends StatelessWidget {
                       height: 50,
                       child: Image.asset('images/png/logo.png'),
                     ),
-                    Container(width: 26,),
+                    Container(width: 10,),
                     Text('XRay',
                       style: TextStyle(
-                        fontSize: 30,
+                        fontSize: 26,
                         color: GlobalStyle.white
                       ),
                     )
                   ],
                 ),
-                Container(height: 20,),
+                Container(height: 26,),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(left: 20),
+                      padding: EdgeInsets.only(left: 10),
                       child: Text('대시보드',
                         style: TextStyle(
                           color: GlobalStyle.white,
-                          fontSize: 15,
+                          fontSize: 12,
                           fontWeight: FontWeight.w600
                         ),
                       ),
                     ),
-                    Container(height: 28.h,),
+                    Container(height: 14,),
                     Column(
                       children: [
                         Menu(icon: Icons.local_hospital,
                             menu: '의료진 대시보드',
                             boxColor: Colors.transparent,
                             iconTextColor: GlobalStyle.white),
+                        Container(height: 10,),
                         Menu(icon: Icons.house,
                             menu: '병원 대시보드1',
                             boxColor: Colors.transparent,
                             iconTextColor: GlobalStyle.white),
+                        Container(height: 10,),
                         Menu(icon: Icons.account_balance_wallet_rounded,
                             menu: '병원 대시보드2',
                             boxColor: Colors.transparent,
                             iconTextColor: GlobalStyle.white),
+                        Container(height: 10,),
                         Menu(icon: Icons.people_alt,
                             menu: '환자 대시보드',
                             boxColor: GlobalStyle.white,
@@ -210,23 +213,23 @@ class Menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(left: 15,),
-      height: 50,
+      padding: EdgeInsets.only(left: 10,),
+      height: 36,
       decoration: BoxDecoration(
         color: boxColor,
-        borderRadius: BorderRadius.circular(18)
+        borderRadius: BorderRadius.circular(8)
       ),
       child: Row(
         children: [
           Icon(icon,
             color: iconTextColor,
-            size: 20,
+            size: 16,
           ),
-          Container(width: 7,),
+          Container(width: 5,),
           Text(menu,
             style: TextStyle(
               color: iconTextColor,
-              fontSize: 15
+              fontSize: 12
             ),
           )
         ],
