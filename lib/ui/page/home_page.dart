@@ -80,6 +80,7 @@ class HomePage extends StatelessWidget {
           Flexible(
             flex: 9,
             child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 30.w,),
               height: double.infinity,
               decoration: BoxDecoration(
                 color: GlobalStyle.bg,
@@ -94,24 +95,21 @@ class HomePage extends StatelessWidget {
                   children: [
                     // -------------------------Header-----------------------------
                     const RightContentsHeader(),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 60.w,),
-                      child: Container(
-                        height: 1620.w,
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+                    Container(
+                      height: 1620.w,
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
 
-                            // -------------------------Left Box-----------------------------
-                            LeftContents(),
+                          // -------------------------Left Box-----------------------------
+                          LeftContents(),
 
-                            // -------------------------Right Box-----------------------------
-                            Flexible(
-                              flex: 2,
-                              child: RightContentsRight(),
-                            ),
-                          ],
-                        ),
+                          // -------------------------Right Box-----------------------------
+                          Flexible(
+                            flex: 2,
+                            child: RightContentsRight(),
+                          ),
+                        ],
                       ),
                     ),
 
